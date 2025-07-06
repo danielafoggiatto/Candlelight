@@ -1,4 +1,5 @@
 # 🕯️ Candlelight - Loja de Produtos Artesanais
+Projeto autoral
 
 Bem-vindo(a) ao repositório da **Candlelight**, uma loja online de produtos artesanais como velas decorativas, peças de resina e outros itens feitos à mão com carinho e criatividade.
 
