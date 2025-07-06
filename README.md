@@ -44,3 +44,13 @@ Este projeto está em desenvolvimento e, por enquanto, conta com um **frontend r
 
 ## 📁 Estrutura do Projeto
 
+Candlelight/
+├── index.html
+├── produtos.html
+├── detalhes.html
+├── contato.html
+├── assets/
+│ ├── css/
+│ ├── js/
+│ └── img/
+└── README.md
