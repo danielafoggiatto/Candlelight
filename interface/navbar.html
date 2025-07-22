@@ -1,0 +1,67 @@
+<nav class="navbar py-1 pb-0">
+            <div class= "loginepesquisa flex-nowrap container-fluid d-flex align-items-start justify-content-between">
+                <a href="#" onclick="carregarConteudo('home')">
+                    <img class="img-fluid img-logo pb-1" src="../assets/img/CandleLight_logomarca.png" alt="Logo">
+                </a>
+                
+                <form id="barra-pesquisa" class="expanded d-flex flex-grow-1 pt-3 ps-5 ps-md-3 ps-sm-0 form mt-lg-5 mt-md-4" role="search">
+                    <input 
+                        class="form-control border-success flex-grow-1 d-none d-md-flex"
+                        type="search"
+                        placeholder="Pesquisar"
+                        aria-label="Search"
+                    /> 
+                    <button class="d-none d-md-flex btn btn-success ms-2" type="submit">Pesquisar</button>
+                </form>
+
+                <button class="btn d-md-none" id="btn-lupa" type="button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                
+                <div class=" d-flex justify-content-between align-items-baseline p-lg-1">
+                    <div class="justify-content-between p-lg-1 d-none d-lg-flex">
+                        <a id="login-cadastro" class="login ms-3 link-success link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="#" >Login/Cadastre-se</a>
+                    </div>
+
+                    <div class="ms-2 ">
+                        <a class="cadastro ms-5 ms-md-2 link-success link-offset-2 link-underline-opacity-0 d-none d-lg-inline carrinhodecompras" href="#">Sacola </a>
+                        <i class="fas fa-shopping-cart p-2 carrinhodecompras"></i>
+                    </div>
+
+                    <div class="dropdown d-lg-none" >
+                        <button class="btn btn-success" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end bg-success" >
+                            <li><a class="dropdown-item text-white bg-success" href="login.html?tela=login">Login</a></li>
+                            <li><a class="dropdown-item text-white bg-success" href="login.html?tela=cadastro">Cadastre-se </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-md bg-success navbar-dark w-100">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-md-none" href="#" onclick="document.querySelector('.navbar-toggler').click()">Produtos</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav align-items-center justify-content-center justify-content-around px-lg-5 mx-lg-5 fs-5 text w-100">
+                            <a class="nav-link text-white" onclick="carregarConteudo('velas-perfumadas')">Velas Perfumadas</a>
+                            <div class="vr mx-2 bg-light d-none d-md-block" style="height: 30px; width: 1px;"></div>
+                            <a class="nav-link text-white" onclick="carregarConteudo('decorativas')">Decorativas</a>
+                            <div class="vr mx-2 bg-light d-none d-md-block" style="height: 30px; width: 1px;"></div>
+                            <a class="nav-link text-white"onclick="carregarConteudo('kits')">Kit's</a>
+                            <div class="vr mx-2 bg-light d-none d-md-block" style="height: 30px; width: 1px;"></div>
+                            <a class="nav-link text-white" onclick="carregarConteudo('velas-massagem')">Velas de Massagem</a>
+                            <div class="vr mx-2 bg-light d-none d-md-block" style="height: 30px; width: 1px;"></div>
+                            <a class="nav-link text-white"onclick="carregarConteudo('porta-velas')">Porta Velas</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+
+        <div id="alerta-carrinho" class="alert alert-success alert-dismissible fade d-none" role="alert" style="position: fixed; top: 20px; right: 20px; z-index: 1050;">Produto adicionado ao carrinho com sucesso!
+        </div>

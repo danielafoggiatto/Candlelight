@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login / Cadastro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+<body>
+  <div class="card">
+    <div class="toggle-buttons mb-3">
+      <button class="btn btn-outline-success me-2" id="btnLogin">Login</button>
+      <button class="btn btn-outline-success" id="btnCadastro">Cadastro</button>
+    </div>
+
+    <!-- Formulário de Login -->
+    <form id="formLogin" class="form-section active">
+      <h4 class="text-center mb-3">Entrar na sua conta</h4>
+      <div class="mb-3">
+        <label for="loginEmail" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="loginEmail" required />
+      </div>
+      <div class="mb-3">
+        <label for="loginSenha" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="loginSenha" required />
+      </div>
+      <button type="submit" class="btn btn-success w-100">Entrar</button>
+
+    <div class="d-grid mt-2">
+    <button type="button" class="btn btn-sm btn-outline-success" onclick="window.history.back()">
+        ← Voltar
+    </button>
+    </div>
+
+    </form>
+
+    <!-- Formulário de Cadastro -->
+    <form id="formCadastro" class="form-section">
+      <h4 class="text-center mb-3">Criar nova conta</h4>
+      <div class="mb-3">
+        <label for="cadastroNome" class="form-label">Nome completo</label>
+        <input type="text" class="form-control" id="cadastroNome" required />
+      </div>
+      <div class="mb-3">
+        <label for="cadastroEmail" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="cadastroEmail" required />
+      </div>
+      <div class="mb-3">
+        <label for="cadastroSenha" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="cadastroSenha" required />
+      </div>
+      <div class="mb-3">
+        <label for="cadastroConfirmar" class="form-label">Confirmar senha</label>
+        <input type="password" class="form-control" id="cadastroConfirmar" required />
+      </div>
+      <button type="submit" class="btn btn-success w-100">Cadastrar</button>
+
+        <div class="d-grid mt-2">
+        <button type="button" class="btn btn-sm btn-outline-success" onclick="window.history.back()">
+            ← Voltar
+        </button>
+        </div>
+
+    </form>
+  </div>
+
+  <script>
+    const btnLogin = document.getElementById('btnLogin');
+    const btnCadastro = document.getElementById('btnCadastro');
+    const formLogin = document.getElementById('formLogin');
+    const formCadastro = document.getElementById('formCadastro');
+    
+    window.addEventListener('DOMContentLoaded', () => {
+        btnLogin.classList.remove('btn-outline-success');
+        btnLogin.classList.add('btn-success');
+
+        btnCadastro.classList.remove('btn-success');
+        btnCadastro.classList.add('btn-outline-success');
+
+        formLogin.classList.add('active');
+        formCadastro.classList.remove('active');
+
+        const params = new URLSearchParams(window.location.search);
+        const tela = params.get('tela');
+
+        if (tela === 'cadastro') {
+        btnCadastro.click();
+        } else {
+        btnLogin.click(); 
+        }
+    });
+
+    btnLogin.addEventListener('click', () => {
+      formLogin.classList.add('active');
+      formCadastro.classList.remove('active');
+      btnLogin.classList.remove('btn-outline-success');
+      btnLogin.classList.add('btn-success');
+      btnCadastro.classList.add('btn-outline-success');
+      btnCadastro.classList.remove('btn-success');
+    });
+
+    btnCadastro.addEventListener('click', () => {
+      formCadastro.classList.add('active');
+      formLogin.classList.remove('active');
+      btnCadastro.classList.remove('btn-outline-success');
+      btnCadastro.classList.add('btn-success');
+      btnLogin.classList.add('btn-outline-success');
+      btnLogin.classList.remove('btn-success');
+    });
+  </script>
+</body>
+</html>

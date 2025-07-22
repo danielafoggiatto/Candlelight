@@ -1,4 +1,4 @@
-/* navbar */
+
 .navbar-toggler {
   border-color: white;
   z-index: 9999 !important;
@@ -19,6 +19,7 @@
 .nav-link:hover {
       background-color: white;
       color: #198754 !important;
+      cursor: pointer;
 }
 
 .nav-item + .nav-item {
@@ -29,9 +30,6 @@
   max-width: 350px;
   height: auto;
 }
-
-
-/*carrossel home*/
 
 .carousel-wrapper {
   position: relative;
@@ -47,7 +45,6 @@
   border-radius: 5%;
 }
 
-/*carrossel slider*/
 .carousel-track .card{
   margin: 0 !important;
 }
@@ -68,7 +65,6 @@
   display: none;
 }
 
-/* card */
 .card {
   flex-shrink: 0;
   max-width: 280px;
@@ -78,6 +74,7 @@
   border-radius: 0.5rem;
   background-color: #fff;
 }
+
 .card-img-top {
   height: 180px;
   width: 100%;
@@ -86,7 +83,6 @@
   border-top-right-radius: 0.5rem;
 }
 
-/* botão slider prev/next*/
 .btn-scroll {
   position: absolute;
   top: 50%;
@@ -101,20 +97,21 @@
   cursor: pointer !important;
   transition: opacity 0.3s ease;
 }
+
 .btn-scroll:hover {
   opacity: 1;
 }
+
 #btn-prev {
   left: 0px;
   border-radius: 0 5px 5px 0;
 }
+
 #btn-next {
   right: 0px;
   border-radius: 5px 0 0 5px;
 }
 
-
-/* form */
 .form {
     max-width: 40vw !important;
     justify-content: space-between;
@@ -124,15 +121,16 @@
 
   padding-left: 10px;
   width: auto;
-  background-color: chocolate !important;
+  background-color: #198754 !important;
 }
-/* dropdown */
+
 .dropdown-menu a{
   display: inline-block;
   padding-left: 10px;
   width: auto;
-  background-color: chocolate !important;
+  background-color: #198754 !important;
 }
+
 .dropdown-menu a:hover {
   background-color: #94fecdba !important;
   color: #198754 !important; 
@@ -143,6 +141,13 @@
   transition: transform 0.2s ease;
 }
 
+.produto-imagem {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
 
 /* 
  * {
@@ -150,12 +155,10 @@
 }  */
 
 
-
 @media (max-width: 1200px) {
     .img-logo {
         max-width: 280px;
     }
-    
 }
 
 @media (max-width: 960px) {
@@ -163,32 +166,11 @@
         max-width: 250px;
     }
     
-   
-
-  /* .swiper {
-    width: 100%;
-    height: 100%;
-  }
-
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-  }
-
-  .swiper-slide img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  } */
-
  .card {
         max-width: 350px;
       }
-
 }
+
 @media (max-width: 767px) {
     .img-logo {
         max-width: 250px;
@@ -213,9 +195,6 @@
         padding: 1rem;
         max-width: 150vw !important;
       }
-      
-      
-
 }
 
 @media (max-width: 576px) {
@@ -225,9 +204,7 @@
   .card {
       max-width: 280px;
     }
-
 }
-
 
 @media (max-width: 376px) {
   .img-logo {
@@ -236,5 +213,4 @@
   .card {
       max-width: 250px;
     }
-
 }

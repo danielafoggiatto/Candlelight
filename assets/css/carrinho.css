@@ -1,0 +1,42 @@
+body {
+  background-color: #f8f9fa; /* fundo clarinho */
+  min-height: 100vh;
+  padding: 40px 0;
+  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  background: white;
+  color: #222;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgb(0 0 0 / 0.15);
+}
+
+.produto-imagem {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.btn-remover {
+  background-color: #dc3545;
+  border: none;
+  transition: background-color 0.3s;
+  color: white;
+}
+
+.btn-remover:hover {
+  background-color: #b02a37;
+}
+
+#total {
+  font-weight: 600;
+  font-size: 1.4rem;
+  background-color: #198754; /* bg-success */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  min-width: 180px;
+}

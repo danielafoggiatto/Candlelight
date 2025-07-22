@@ -1,100 +1,105 @@
 <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 p-3 mx-lg-4 mx-sm-1 mx-md-3">
     <div class="card m-1" style="max-width: 22rem;" >
-        <img data-produto="fresh-bamboo" class="img-fluid object-fit-cover" src="./img/freshbamboo.jpg" class="card-img-top" style="height: 12rem;" alt="...">
+        <img data-produto="fresh-bamboo" class="img-fluid object-fit-cover" src="../assets/img/freshbamboo.jpg" class="card-img-top" style="height: 12rem;" alt="...">
         <div class="card-body">
             <h5 class="card-title">Vela Fresh Bamboo</h5>
             <p class="card-text">É conhecida por seu aroma leve, refrescante e natural — uma combinação que remete à pureza, equilíbrio e natureza. Com notas verdes e suaves, essa fragrância cria um ambiente calmo e revigorante. É perfeita para usar em momentos de autocuidado, meditação ou na decoração de ambientes modernos e minimalistas. </p>
             <p class="d-flex justify-content-center fst-italic">R$ 50,00</p>
             <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-success">Adicionar ao Carrinho</a>
+                <a href="#" class="btn btn-success"
+                    data-produto="fresh-bamboo"
+                    onclick="adicionarAoCarrinho(event, this)">
+                Adicionar ao Carrinho
+                </a>
+
             </div>
         </div>
     </div>
     <div class="card m-1" style="max-width: 22rem;" >
-        <img class="img-fluid object-fit-cover"  src="./img/alecrim.jpg" class="card-img-top" style="height: 12rem;" alt="..." data-produto="alecrim">
+        <img class="img-fluid object-fit-cover"  src="../assets/img/alecrim.jpg" class="card-img-top" style="height: 12rem;" alt="..." data-produto="alecrim">
         <div class="card-body">
             <h5 class="card-title">Vela de Alecrim</h5>
             <p class="card-text">É conhecida por seu aroma leve, refrescante e natural — uma combinação que remete à pureza, equilíbrio e natureza. Com notas verdes e suaves, essa fragrância cria um ambiente calmo e revigorante. É perfeita para usar em momentos de autocuidado, meditação ou na decoração de ambientes modernos e minimalistas. </p>
             <p class="d-flex justify-content-center fst-italic">R$ 50,00</p>
             <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-success">Adicionar ao Carrinho</a>
+                <a href="#" class="btn btn-success" onclick="adicionarAoCarrinho(event, this)" data-produto="alecrim">Adicionar ao Carrinho</a>
             </div>
         </div>
     </div>
     <div class="card m-1" style="max-width: 22rem;">
-        <img  data-produto="figo" class="img-fluid object-fit-cover"  src="./img/figo.jpg" class="card-img-top" style="height: 12rem;" alt="...">
+        <img  data-produto="figo" class="img-fluid object-fit-cover"  src="../assets/img/figo.jpg" class="card-img-top" style="height: 12rem;" alt="...">
         <div class="card-body">
             <h5 class="card-title">Vela De Figo</h5>
             <p class="card-text">É conhecida por seu aroma leve, refrescante e natural — uma combinação que remete à pureza, equilíbrio e natureza. Com notas verdes e suaves, essa fragrância cria um ambiente calmo e revigorante. É perfeita para usar em momentos de autocuidado, meditação ou na decoração de ambientes modernos e minimalistas. </p>
             <p class="d-flex justify-content-center fst-italic">R$ 50,00</p>
             <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-success">Adicionar ao Carrinho</a>
+                <a href="#" class="btn btn-success" data-produto="figo" onclick="adicionarAoCarrinho(event, this)">Adicionar ao Carrinho</a>
             </div>
         </div>
     </div>
     <div class="card m-1" style="max-width: 22rem;">
-        <img data-produto="peace" class="img-fluid object-fit-cover"  src="./img/peace.jpg" class="card-img-top" style="height: 12rem;" alt="...">
+        <img data-produto="peace" class="img-fluid object-fit-cover"  src="../assets/img/peace.jpg" class="card-img-top" style="height: 12rem;" alt="...">
         <div class="card-body">
             <h5 class="card-title">Vela Peace</h5>
             <p class="card-text">É conhecida por seu aroma leve, refrescante e natural — uma combinação que remete à pureza, equilíbrio e natureza. Com notas verdes e suaves, essa fragrância cria um ambiente calmo e revigorante. É perfeita para usar em momentos de autocuidado, meditação ou na decoração de ambientes modernos e minimalistas. </p>
             <p class="d-flex justify-content-center fst-italic">R$ 50,00</p>
             <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-success">Adicionar ao Carrinho</a>
+                <a href="#" class="btn btn-success" onclick="adicionarAoCarrinho(event, this)" data-produto="peace">Adicionar ao Carrinho</a>
             </div>
         </div>
     </div>
     <div class="card m-1" style="max-width: 22rem;">
-        <img data-produto="lavanda" class="img-fluid object-fit-cover"  src="./img/lavanda.jpg" class="card-img-top" style="height: 12rem;" alt="...">
+        <img data-produto="lavanda" class="img-fluid object-fit-cover"  src="../assets/img/lavanda.jpg" class="card-img-top" style="height: 12rem;" alt="...">
         <div class="card-body">
             <h5 class="card-title">Vela de Lavanda</h5>
             <p class="card-text">É conhecida por seu aroma leve, refrescante e natural — uma combinação que remete à pureza, equilíbrio e natureza. Com notas verdes e suaves, essa fragrância cria um ambiente calmo e revigorante. É perfeita para usar em momentos de autocuidado, meditação ou na decoração de ambientes modernos e minimalistas. </p>
             <p class="d-flex justify-content-center fst-italic">R$ 50,00</p>
             <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-success">Adicionar ao Carrinho</a>
+                <a href="#" class="btn btn-success" onclick="adicionarAoCarrinho(event, this)" data-produto="lavanda">Adicionar ao Carrinho</a>
             </div>
         </div>
     </div>
     <div class="card m-1" style="max-width: 22rem;">
-        <img data-produto="flores" class="img-fluid object-fit-cover"  src="./img/campo.jpg" class="card-img-top" style="height: 12rem;" alt="...">
+        <img data-produto="flores" class="img-fluid object-fit-cover"  src="../assets/img/campo.jpg" class="card-img-top" style="height: 12rem;" alt="...">
         <div class="card-body">
             <h5 class="card-title">Vela Flores do Campo</h5>
             <p class="card-text">É conhecida por seu aroma leve, refrescante e natural — uma combinação que remete à pureza, equilíbrio e natureza. Com notas verdes e suaves, essa fragrância cria um ambiente calmo e revigorante. É perfeita para usar em momentos de autocuidado, meditação ou na decoração de ambientes modernos e minimalistas. </p>
             <p class="d-flex justify-content-center fst-italic">R$ 50,00</p>
             <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-success">Adicionar ao Carrinho</a>
+                <a href="#" class="btn btn-success" onclick="adicionarAoCarrinho(event, this)" data-produto="flores">Adicionar ao Carrinho</a>
             </div>
         </div>
     </div>
     <div class="card m-1" style="max-width: 22rem;">
-        <img data-produto="rosas" class="img-fluid object-fit-cover"  class="img-fluid object-fit-cover"  src="./img/rosa.jpg" class="card-img-top" style="height: 12rem;" alt="...">
+        <img data-produto="rosas" class="img-fluid object-fit-cover"  class="img-fluid object-fit-cover"  src="../assets/img/rosa.jpg" class="card-img-top" style="height: 12rem;" alt="...">
         <div class="card-body">
             <h5 class="card-title">Vela de Rosas</h5>
             <p class="card-text">É conhecida por seu aroma leve, refrescante e natural — uma combinação que remete à pureza, equilíbrio e natureza. Com notas verdes e suaves, essa fragrância cria um ambiente calmo e revigorante. É perfeita para usar em momentos de autocuidado, meditação ou na decoração de ambientes modernos e minimalistas. </p>
             <p class="d-flex justify-content-center fst-italic">R$ 50,00</p>
             <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-success">Adicionar ao Carrinho</a>
+                <a href="#" class="btn btn-success" onclick="adicionarAoCarrinho(event, this)" data-produto="rosas">Adicionar ao Carrinho</a>
             </div>
         </div>
     </div>
     <div class="card m-1" style="max-width: 22rem;">
-        <img data-produto="mel" class="img-fluid object-fit-cover"  src="./img/producao3.jpg" class="card-img-top" style="height: 12rem;" alt="...">
+        <img data-produto="mel" class="img-fluid object-fit-cover"  src="../assets/img/producao3.jpg" class="card-img-top" style="height: 12rem;" alt="...">
         <div class="card-body">
             <h5 class="card-title">Vela Mel e Canela</h5>
             <p class="card-text">É conhecida por seu aroma leve, refrescante e natural — uma combinação que remete à pureza, equilíbrio e natureza. Com notas verdes e suaves, essa fragrância cria um ambiente calmo e revigorante. É perfeita para usar em momentos de autocuidado, meditação ou na decoração de ambientes modernos e minimalistas. </p>
             <p class="d-flex justify-content-center fst-italic">R$ 50,00</p>
             <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-success">Adicionar ao Carrinho</a>
+                <a href="#" class="btn btn-success" onclick="adicionarAoCarrinho(event, this)" data-produto="mel">Adicionar ao Carrinho</a>
             </div>
         </div>
     </div>
     <div class="card m-1" style="max-width: 22rem;">
-        <img data-produto="jasmin" class="img-fluid object-fit-cover"  src="./img/jasmin.jpg" class="card-img-top" style="height: 12rem;" alt="...">
+        <img data-produto="jasmin" class="img-fluid object-fit-cover"  src="../assets/img/jasmin.jpg" class="card-img-top" style="height: 12rem;" alt="...">
         <div class="card-body">
             <h5 class="card-title">Vela mini de Jasmin</h5>
             <p class="card-text">É conhecida por seu aroma leve, refrescante e natural — uma combinação que remete à pureza, equilíbrio e natureza. Com notas verdes e suaves, essa fragrância cria um ambiente calmo e revigorante. É perfeita para usar em momentos de autocuidado, meditação ou na decoração de ambientes modernos e minimalistas. </p>
             <p class="d-flex justify-content-center fst-italic">R$ 20,00</p>
             <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-success">Adicionar ao Carrinho</a>
+                <a href="#" class="btn btn-success" onclick="adicionarAoCarrinho(event, this)" data-produto="jasmin">Adicionar ao Carrinho</a>
             </div>
         </div>
     </div>
