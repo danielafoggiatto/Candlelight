@@ -9,7 +9,7 @@ const menuItems = document.querySelectorAll('.menu-item');
   });
 
 document.addEventListener('DOMContentLoaded', () =>{
-  fetch('navbar.html')
+  fetch('/interface/navbar.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('navbar').innerHTML = html;
@@ -46,14 +46,14 @@ document.addEventListener('DOMContentLoaded', () =>{
       botaoCarrinho.forEach(botao => {
         botao.style.cursor = 'pointer';
         botao.addEventListener('click', () => {
-          window.location.href = 'carrinho.html';
+          window.location.href = '/interface/carrinho.html';
         });
       });
 
       const login = document.querySelector('#login-cadastro');
       if (login) {
         login.addEventListener('click', () => {
-          window.location.href = 'login.html';
+          window.location.href = '/interface/login.html';
         });
       }
     })
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 
     
   if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '/index') {
-    fetch('home.html')
+    fetch('/interface/home.html')
       .then(response => response.text())  
       .then(data => {
         const conteudo = document.getElementById('conteudo');
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 
 
-  fetch('carrossel.html')
+  fetch('/interface/carrossel.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('carrosel-inicio').innerHTML = html;
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () =>{
         img.addEventListener('click', () => {
           const produto = img.dataset.produto;
           if (produto) {
-            window.location.href = `detalhes.html?produto=${produto}`;
+            window.location.href = `/interface/detalhes.html?produto=${produto}`;
           }
         });
         img.style.cursor = 'pointer';
@@ -103,7 +103,7 @@ function carregarConteudo(pagina){
   switch (pagina){
     case 'home':
     {
-      fetch('home.html')
+      fetch('/interface/home.html')
         .then(response => response.text())
         .then(data => {
           const detalheProduto = document.getElementById('detalhe-produto');
@@ -115,7 +115,7 @@ function carregarConteudo(pagina){
           conteudo.innerHTML = data;
           adicionarEventosCards();
 
-          fetch('carrossel.html')
+          fetch('/interface/carrossel.html')
             .then(response => response.text())
             .then(html => {
               const carroselContainer = document.getElementById('carrosel-inicio');
@@ -126,7 +126,7 @@ function carregarConteudo(pagina){
                   img.addEventListener('click', () => {
                     const produto = img.dataset.produto;
                     if (produto) {
-                      window.location.href = `detalhes.html?produto=${produto}`;
+                      window.location.href = `/interface/detalhes.html?produto=${produto}`;
                     }
                   });
                   img.style.cursor = 'pointer';
@@ -145,7 +145,7 @@ function carregarConteudo(pagina){
 
     case 'velas-perfumadas':
     {
-      fetch('perfumadas.html')
+      fetch('/interface/perfumadas.html')
         .then(response => response.text())
         .then(data => {
           conteudo.innerHTML = data;
@@ -159,7 +159,7 @@ function carregarConteudo(pagina){
 
     case 'decorativas':
     {
-      fetch('decorativas.html')
+      fetch('/interface/decorativas.html')
         .then(response => response.text())
         .then(data => {
           conteudo.innerHTML = data;
@@ -173,7 +173,7 @@ function carregarConteudo(pagina){
 
     case 'kits':
     {
-      fetch('kits.html')
+      fetch('/interface/kits.html')
         .then(response => response.text())
         .then(data => {
           conteudo.innerHTML = data;
@@ -187,7 +187,7 @@ function carregarConteudo(pagina){
 
     case 'velas-massagem':
     {
-      fetch('massagem.html')
+      fetch('/interface/massagem.html')
         .then(response => response.text())
         .then(data => {
           conteudo.innerHTML = data;
@@ -201,7 +201,7 @@ function carregarConteudo(pagina){
     
     case 'porta-velas':
     {
-      fetch('portavelas.html')
+      fetch('/interface/portavelas.html')
         .then(response => response.text())
         .then(data => {
           conteudo.innerHTML = data;
@@ -247,7 +247,7 @@ function adicionarEventosCards() {
     if (produto) {
       card.style.cursor = 'pointer';
       card.addEventListener('click', () => {
-        window.location.href = `detalhes.html?produto=${produto}`;
+        window.location.href = `/interface/detalhes.html?produto=${produto}`;
       });
     }
   });

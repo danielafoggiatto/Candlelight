@@ -46,7 +46,7 @@ style.innerHTML = `
 document.head.appendChild(style);
 
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('carrossel.html')
+  fetch('/interface/carrossel.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('carrosel-inicio').innerHTML = html;
