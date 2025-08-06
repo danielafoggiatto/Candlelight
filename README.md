@@ -1,8 +1,7 @@
 # 🕯️ Candlelight - Loja de Produtos Artesanais
 Projeto autoral
 
-Bem-vindo(a) ao repositório da **Candlelight**, uma loja online de produtos artesanais como velas decorativas, peças de resina e outros itens feitos à mão com carinho e criatividade.
-
+Bem-vindo(a) ao repositório da **Candlelight**, uma loja online de velas decorativas.
 Este projeto está em desenvolvimento e, por enquanto, conta com um **frontend responsivo** feito em HTML, CSS (Bootstrap) e JavaScript. Em breve, será integrado com um **backend em C# usando ASP.NET Core**.
 
 🔗 **Acesse o site online**:  
