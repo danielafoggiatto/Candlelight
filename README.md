@@ -1,55 +1,14 @@
-# 🕯️ Candlelight - Loja de Produtos Artesanais
-Projeto autoral
+Mais um projeto autoral, desde a logomarca até o banco de dados.
+Projeto de um site, feito em 2025, com muitas funcionalidades e responsividade.
 
-Bem-vindo(a) ao repositório da **Candlelight**, uma loja online de velas decorativas.
-Este projeto está em desenvolvimento e, por enquanto, conta com um **frontend responsivo** feito em HTML, CSS (Bootstrap) e JavaScript. Em breve, será integrado com um **backend em C# usando ASP.NET Core**.
+👉 Algumas funcionalidades:
+Logomarca linda criada por mim, botões/ícones de pesquisa, carrinho e user, botão hamburguer quando telas médias e pequenas, carrossel com produtos, zoom do produto ao clicar nele, carrinho e login/cadastro com botão voltar, modal para perguntas, barra de pesquisa que aparece/some quando clicar no ícone de pesquisa em telas médias e pequenas.
 
-🔗 **Acesse o site online**:  
-👉 [https://danielafoggiatto.github.io/Candlelight/](https://danielafoggiatto.github.io/Candlelight/)
+Diferenciais no code que fazem toda diferença:
+✅ Arquitetura em camadas, tudo muito bem dividido.
+✅ Página de produtos (JS) com todos os detalhes do produto, com a const dados, com nome, descrição, preço, imagem e a data-produto, como se fosse um id, que abre automaticamente ao clicar naquele produto (especificamente na foto).
+✅ Botão de Carrinho/sacola que, em telas médias e pequenas, aparece apenas o icon, ao clicar, abre uma página muito bem estruturada que já calcula o preço unitário e preço total, com botão Voltar.
+✅ Login/Cadastro que em telas menores, aparece apenas um icon user, abrindo um dropdown-menu, com a opção Login e Cadastro, que ao clicar em uma das opções, abre a página de login ou cadastro, respectivamente, sem erros e com muita responsividade.
+✅ Eventos e métodos elaborados com base em Clean Code que fazem o código ser bem estruturado, sem repetição desnecessária e com objetividade.
 
----
-
-## ✨ Funcionalidades (Frontend)
-
-- Página inicial com carrossel de produtos
-- Menu responsivo com categorias
-- Barra de pesquisa funcional
-- Página de detalhes dos produtos
-- Dropdowns com links úteis
-- Footer com informações de contato e redes sociais
-- Layout adaptado para desktop e mobile
-
----
-
-## ⚙️ Tecnologias Utilizadas
-
-- HTML5
-- CSS3
-- Bootstrap 5
-- JavaScript ES6
-
----
-
-## 📦 Planejamento para o Backend (em breve)
-
-- Cadastro e login de usuários
-- Área administrativa para gerenciar produtos
-- Carrinho de compras com resumo de pedido
-- Processamento de pedidos
-- Integração com banco de dados (SQLite ou SQL Server)
-- API RESTful com ASP.NET Core
-
----
-
-## 📁 Estrutura do Projeto
-
-Candlelight/
-├── index.html
-├── produtos.html
-├── detalhes.html
-├── contato.html
-├── assets/
-│ ├── css/
-│ ├── js/
-│ └── img/
-└── README.md
+✅ E com certeza, muitos testes, erros e acertos, que fizeram valer a pena para chegar nesse resultado lindo... Usei muito Bootstrap, para deixar o código mais limpo e com menos css possível. 
